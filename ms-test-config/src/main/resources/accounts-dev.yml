@@ -1,0 +1,11 @@
+accounts:
+  message: "This is test config - DEV"
+  contactDetails:
+    name: "Ian - Software Engineer"
+    email: "ianlombu09@gmail.com"
+  onCallSupport:
+    - 08123456789
+    - 08937896567
+
+build:
+  version: 2.0

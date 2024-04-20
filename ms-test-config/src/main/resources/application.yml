@@ -1,0 +1,16 @@
+server:
+  port: 7070
+spring:
+  application:
+    name: accounts
+  profiles:
+    active: dev
+  config:
+    import: configserver:http://localhost:7080/
+    name: config-sever
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

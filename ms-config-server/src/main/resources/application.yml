@@ -1,0 +1,20 @@
+server:
+  port: 7080
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: "classpath:/config"
+        git:
+          uri: https://github.com/ianlombu23/ms-config.git
+          username: ianlombu23
+          password: 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
+          default-label: master
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
